@@ -1,0 +1,21 @@
+---
+import Link from "../components/Link.astro";
+
+const { title = "default" } = Astro.props;
+---
+
+<html>
+    <head>
+        <title>{title}</title>
+    </head>
+    <body>
+        <nav>
+            <Link href="/index">Home</Link>
+            <Link href="/test">Test Page</Link>
+        </nav>
+        <!-- <h1>Astro Test Layout Page</h1> -->
+         <main>
+            <slot/>
+         </main>
+    </body>
+</html>

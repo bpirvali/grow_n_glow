@@ -1,71 +1,9 @@
-/* Reset and Base */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  background-color: #eae5de;
-  color: #222;
-  line-height: 1.6;
-}
+/* @tailwindcss v4 */
 
-/* Header Layout */
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 2rem;
-  background-color: #f6f4f1;
-  border-bottom: 1px solid #ddd;
-}
-.nav-left a {
-  margin-right: 2rem;
-  text-decoration: none;
-  color: #333;
-  font-weight: 400;
-  font-size: 1rem;
-}
-.nav-left a.active {
-  color: #c25c36;
-}
-.logo {
-  font-size: 2rem;
-  font-weight: bold;
-  font-family: serif;
-  padding-right: 1rem;
-}
+/* src/styles/global.css */
+@import "tailwindcss";
 
-/* Main Section */
-.main-section {
-  max-width: 800px;
-  margin: 6rem auto;
-  padding: 2rem;
-  text-align: left;
-}
-.main-section h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  font-weight: 300;
-}
-.main-section p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  color: #444;
-}
+/* (optional) enable plugins like typography */
+@plugin "@tailwindcss/typography";
 
-/* Button */
-.button-outline {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  border: 1px solid #444;
-  text-decoration: none;
-  color: #444;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-}
-.button-outline:hover {
-  background-color: #444;
-  color: white;
-}
+/* you can also add custom CSS here */
