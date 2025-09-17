@@ -4,6 +4,10 @@
 @import "tailwindcss";
 
 /* (optional) enable plugins like typography */
-@plugin "@tailwindcss/typography";
+/* @plugin "@tailwindcss/typography"; */
 
 /* you can also add custom CSS here */
+
+body {
+    background-color: peachpuff;
+}

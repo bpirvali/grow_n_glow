@@ -1,16 +1,20 @@
 ---
 import Link from "../components/Link.astro";
-
+import "../styles/global.css";
 const { title = "default" } = Astro.props;
 ---
 
 <html>
-    <head>
-        <title>{title}</title>
-    </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
     <body>
         <nav>
-            <Link href="/index">Home</Link>
+            <Link href="/">Home</Link>
             <Link href="/test">Test Page</Link>
         </nav>
         <!-- <h1>Astro Test Layout Page</h1> -->
