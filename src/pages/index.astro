@@ -5,3 +5,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 <!-- <html><body><h1>It works!</h1></body></html> -->
 <BaseLayout title="Home">Home Page</BaseLayout>
 
+<script>
+    // You can add client-side JavaScript here if needed
+    import { consoleMe } from '../lib/utils';
+    consoleMe("Home page is loaded");
+</script>
